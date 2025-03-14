@@ -55,7 +55,7 @@ const Skills = () => {
                     </p>
                     <h2 className='text-4xl font-bold text-gray-800 mb-4'>My Technical Expertise</h2>
                     <p className='text-gray-600 max-w-2xl mx-auto'>
-                        Here are the technologies I work with. I'm constantly learning and adding new skills to my repertoire.
+                        Here are the technologies I work with. I&apos;m constantly learning and adding new skills to my repertoire.
                     </p>
                 </div>
                 
