@@ -18,17 +18,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Burak Fidan | Mobile & Backend Developer" />
-        <meta property="og:description" content="Mobile and Backend Developer specializing in Flutter, Android, iOS, and Go" />
+        <meta property="og:title" content="Burak Fidan | Software Developer" />
+        <meta property="og:description" content="Burak Fidan's Personal Website" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.burakfidan.com" />
-        <meta property="og:image" content="https://www.burakfidan.com/static/assets/profile.jpg" />
+        <meta property="og:image" content="https://www.burakfidan.com/static/assets/navLogo.jpg" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Burak Fidan | Mobile & Backend Developer" />
-        <meta name="twitter:description" content="Mobile and Backend Developer specializing in Flutter, Android, iOS, and Go" />
-        <meta name="twitter:image" content="https://www.burakfidan.com/static/assets/profile.jpg" />
+        <meta name="twitter:title" content="Burak Fidan | Software Developer" />
+        <meta name="twitter:description" content="Burak Fidan's Personal Website" />
+        <meta name="twitter:image" content="https://www.burakfidan.com/static/assets/navLogo.jpg" />
       </Head>
 
       <main className="bg-gray-50">

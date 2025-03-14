@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { AiFillMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn, FaMedium, FaArrowUp } from 'react-icons/fa'
 import Link from 'next/link'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const Main = () => {
     const [showScrollTop, setShowScrollTop] = useState(false);
