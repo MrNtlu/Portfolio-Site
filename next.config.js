@@ -2,12 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = {
   images: {
-    domains: ['localhost','burakfidan.com'],
+    domains: [
+      'cdn-images-1.medium.com',
+      'miro.medium.com',
+      'images.unsplash.com',
+    ],
   },
-};
+}
 
 module.exports = nextConfig

@@ -1,5 +1,16 @@
 export const PortfolioProjects = [
     {
+        slug: "watchlistfy",
+        name: "Watchlistfy - AI & Tracker",
+        description: `All-in-one content tracking application with AI integration. Users can track Movies, TV Shows, Anime, and Games.
+        
+        Features include AI suggestions based on user preferences, AI assistant for content summaries and review analysis, unlimited list management, and detailed progress tracking.`,
+        tags: ["Flutter", "Go", "MongoDB", "Redis", "OpenAI", "TMDB API", "IGDB API", "Jikan API"],
+        github: null,
+        playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.watchlistfy",
+        appstore: "https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6474720355",
+    },
+    {
         slug: "kanma",
         name: "Kanma - Personal Finance Manager",
         description: `Personal Finance Manager. It helps users to track their investments, transactions and subscriptions and it's totally open source.
@@ -9,7 +20,6 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/Asset-Manager",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.kantan",
         appstore: "https://apps.apple.com/tr/app/kanma-personal-finance/id1629419797",
-        isLandingPageActive: true,
     },
     {
         slug: "passvault",
@@ -23,7 +33,6 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/PassVault",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.PassVault",
         appstore: null,
-        isLandingPageActive: true,
     },
     {
         slug: "mai_2",
@@ -35,7 +44,6 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/MyAnimeInfo2",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.myanimeinfo2",
         appstore: null,
-        isLandingPageActive: false,
     },
     {
         slug: "sugee",
@@ -47,7 +55,6 @@ export const PortfolioProjects = [
         github: null,
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.solnetwork",
         appstore: "https://apps.apple.com/us/app/sugee-kansai/id1512411346",
-        isLandingPageActive: false,
     },
     {
         slug: "subs",
@@ -59,19 +66,17 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/MySubscriptionManager",
         playstore: "https://github.com/MrNtlu/MySubscriptionManager",
         appstore: null,
-        isLandingPageActive: false,
     },
     {
         slug: "flt",
         name: "FriendsLeagueTable - Create Your Own League",
         description: `App uses Dagger 2, RxJava, SQLite, Room, MVVM with LiveData, Unit Testing, ButterKnife, Leak Canary and Glide.
 
-        App allows you to create your own league to track your matches that you played with your friends. `,
+        App allows you to create your own league to track your matches that you played with your friends.`,
         tags: ["Android", "Java", "MVVM", "RxJava", "LiveData", "SQLite", "Dagger 2", "Room"],
         github: "https://github.com/MrNtlu/FriendsLeagueTable",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.friendsleaguetable",
         appstore: null,
-        isLandingPageActive: false,
     },
     {
         slug: "mai",
@@ -81,7 +86,6 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/MyAnimeInfo",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.myanimeinfo",
         appstore: null,
-        isLandingPageActive: false,
     },
     {
         slug: "wallmedia",
@@ -91,7 +95,6 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/WallMedia-APP",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.socialmediaapp",
         appstore: null,
-        isLandingPageActive: false,
     },
     {
         slug: "todo",
@@ -101,7 +104,6 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/WhatTODO",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.whattodo",
         appstore: null,
-        isLandingPageActive: false,
     },
     {
         slug: "mad_planets",
@@ -111,7 +113,6 @@ export const PortfolioProjects = [
         github: "https://github.com/MrNtlu/MadPlanetsUnity2D",
         playstore: "https://play.google.com/store/apps/details?id=com.MadPlanets",
         appstore: null,
-        isLandingPageActive: false,
     },
 ]
 
