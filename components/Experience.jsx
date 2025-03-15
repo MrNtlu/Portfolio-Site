@@ -28,7 +28,7 @@ const Experience = () => {
                                 <div className='absolute left-6 md:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-blue-500 rounded-full'></div>
                                 
                                 {/* Content */}
-                                <div className={`w-full md:w-[45%] relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group p-6 ${
+                                <div className={`w-full md:w-[45%] relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] ${
                                     index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'
                                 }`}>
                                     <h3 className='text-xl font-bold text-gray-800 group-hover:text-[#5651e5] transition-colors'>{exp.position}</h3>

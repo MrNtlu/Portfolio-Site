@@ -4,7 +4,7 @@ import { FaJava } from "react-icons/fa";
 
 const SkillCard = ({ name, level, color, icon: Icon }) => {
     return (
-        <div className="relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group">
+        <div className="relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)]">
             <div className="p-6">
                 <div className="flex items-center mb-4">
                     <div className={`p-3 rounded-lg ${color} text-white mr-4 transition-transform group-hover:scale-110`}>

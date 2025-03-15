@@ -8,7 +8,7 @@ const ProjectCard = ({ name, description, tags, github, playstore, appstore, slu
 
     return (
         <div 
-            className={`relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group ${
+            className={`relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] ${
                 slug === 'watchlistfy' ? 'md:col-span-2' : ''
             }`}
             onMouseEnter={() => setIsHovered(true)}

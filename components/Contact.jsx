@@ -2,7 +2,7 @@ import React from 'react';
 import { FaLinkedinIn, FaGithub, FaMedium } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
-const SocialButton = ({ href, icon, label, color, hoverColor }) => {
+const SocialButton = ({ href, icon, label, color }) => {
     return (
         <a
             href={href}
@@ -11,14 +11,9 @@ const SocialButton = ({ href, icon, label, color, hoverColor }) => {
             aria-label={label}
             className="group"
         >
-            <div className={`flex items-center justify-center p-5 rounded-full shadow-lg
-                ${color} text-white
-                transform transition-all duration-300
-                hover:scale-110 hover:shadow-xl ${hoverColor}`}
-            >
+            <div className={`rounded-xl shadow-lg shadow-gray-400/50 p-5 cursor-pointer hover:scale-110 hover:shadow-${color}/30 ease-in duration-300 bg-white/90 backdrop-blur-sm`}>
                 {icon}
             </div>
-            <p className="mt-3 text-center text-sm font-medium text-gray-600">{label}</p>
         </a>
     );
 };
@@ -41,31 +36,27 @@ const Contact = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         <SocialButton 
                             href="https://www.linkedin.com/in/burak-fidan/"
-                            icon={<FaLinkedinIn size={24} />}
+                            icon={<FaLinkedinIn size={22} className="text-[#0077b5]" />}
                             label="LinkedIn"
-                            color="bg-[#0077b5]"
-                            hoverColor="hover:bg-[#005885]"
+                            color="blue"
                         />
                         <SocialButton 
                             href="https://github.com/MrNtlu"
-                            icon={<FaGithub size={24} />}
+                            icon={<FaGithub size={22} className="text-gray-800" />}
                             label="GitHub"
-                            color="bg-[#333]"
-                            hoverColor="hover:bg-black"
+                            color="purple"
                         />
                         <SocialButton 
                             href="mailto:mrntlu@gmail.com"
-                            icon={<AiOutlineMail size={24} />}
+                            icon={<AiOutlineMail size={22} className="text-[#5651e5]" />}
                             label="Email"
-                            color="bg-[#5651e5]"
-                            hoverColor="hover:bg-[#4540b3]"
+                            color="green"
                         />
                         <SocialButton 
                             href="https://burakdev.medium.com/"
-                            icon={<FaMedium size={24} />}
+                            icon={<FaMedium size={22} className="text-black" />}
                             label="Medium"
-                            color="bg-[#000]"
-                            hoverColor="hover:bg-[#222]"
+                            color="orange"
                         />
                     </div>
                 </div>

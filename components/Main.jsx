@@ -112,10 +112,10 @@ const Main = () => {
                 }}
                 aria-label="Scroll to experience section"
             >
-                <div className="flex flex-col items-center">
-                    <p className="text-sm text-gray-600 mb-2 font-medium tracking-wider">Scroll Down</p>
+                <div className="flex flex-col items-center group">
+                    <p className="text-sm font-medium tracking-wider mb-2 text-[#5651e5] animate-pulse transition-all duration-300 drop-shadow-[0_0_8px_rgba(86,81,229,0.5)] group-hover:drop-shadow-[0_0_12px_rgba(86,81,229,0.8)]">Scroll Down</p>
                     <svg 
-                        className="w-6 h-6 text-[#5651e5]"
+                        className="w-6 h-6 text-[#5651e5] drop-shadow-[0_0_8px_rgba(86,81,229,0.5)] group-hover:drop-shadow-[0_0_12px_rgba(86,81,229,0.8)]"
                         fill="none" 
                         strokeLinecap="round" 
                         strokeLinejoin="round" 

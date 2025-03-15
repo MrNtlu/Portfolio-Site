@@ -11,7 +11,7 @@ const BlogCard = ({ title, description, thumbnail, link, pubDate }) => {
             href={link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="block relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group"
+            className="block relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)]"
         >
             <div className="relative w-full h-48">
                 {!imgError ? (
@@ -73,7 +73,7 @@ const Blog = () => {
                         href="https://burakdev.medium.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-[#5651e5] text-white rounded-lg hover:bg-[#4540b3] transition-all duration-300 shadow-sm hover:shadow-md"
                     >
                         <FaMedium size={20} />
                         <span>Read More on Medium</span>
