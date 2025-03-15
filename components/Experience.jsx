@@ -3,8 +3,14 @@ import { PortfolioExperiences } from '../constants/Experiences';
 
 const Experience = () => {
     return (
-        <div id='experience' className='w-full py-24 bg-white'>
-            <div className='max-w-[1240px] mx-auto px-4'>
+        <div id='experience' className='w-full py-24 relative bg-gradient-to-b from-white via-white to-white overflow-hidden'>
+            {/* Background elements */}
+            <div className='absolute inset-0 bg-[url("/grid.svg")] opacity-5'></div>
+            <div className='absolute -top-32 left-0 right-0 h-32 bg-gradient-to-b from-gray-100/80 to-transparent'></div>
+            <div className='absolute top-0 -right-20 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob'></div>
+            <div className='absolute bottom-0 -left-20 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000'></div>
+            
+            <div className='max-w-[1240px] mx-auto px-4 relative z-10'>
                 <div className="mb-12 text-center">
                     <p className='inline-block uppercase text-sm tracking-widest text-[#5651e5] mb-4 bg-[#5651e5]/10 px-4 py-2 rounded-full'>
                         Experience

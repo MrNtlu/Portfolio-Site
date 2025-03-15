@@ -23,12 +23,15 @@ const Main = () => {
     };
 
     return (
-        <div id='home' className='w-full h-screen relative bg-gradient-to-b from-white to-gray-100 flex items-center justify-center overflow-hidden'>
+        <div id='home' className='w-full h-screen relative bg-gradient-to-b from-white via-white to-gray-100/80 flex items-center justify-center overflow-hidden'>
             {/* Background elements */}
             <div className='absolute inset-0 bg-[url("/grid.svg")] opacity-5'></div>
             <div className='absolute top-20 -right-20 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob'></div>
             <div className='absolute top-40 -left-20 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000'></div>
             <div className='absolute bottom-20 left-1/2 w-96 h-96 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000'></div>
+            
+            {/* Smooth transition to next section */}
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white"></div>
             
             {/* Main content */}
             <div className='max-w-[1240px] mx-auto px-4 flex flex-col items-center justify-center text-center relative z-10'>

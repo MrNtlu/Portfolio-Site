@@ -20,8 +20,14 @@ const SocialButton = ({ href, icon, label, color }) => {
 
 const Contact = () => {
     return (
-        <div id='contact' className='w-full py-24'>
-            <div className='max-w-[1240px] mx-auto px-4'>
+        <div id='contact' className='w-full py-24 relative bg-gradient-to-b from-white to-gray-100 flex items-center justify-center overflow-hidden'>
+            {/* Background elements */}
+            <div className='absolute inset-0 bg-[url("/grid.svg")] opacity-5'></div>
+            <div className='absolute top-20 -right-20 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob'></div>
+            <div className='absolute top-40 -left-20 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000'></div>
+            <div className='absolute bottom-20 left-1/2 w-96 h-96 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000'></div>
+            
+            <div className='max-w-[1240px] mx-auto px-4 relative z-10'>
                 <div className="mb-12 text-center">
                     <p className='inline-block uppercase text-sm tracking-widest text-[#5651e5] mb-4 bg-[#5651e5]/10 px-4 py-2 rounded-full'>
                         Contact
