@@ -28,21 +28,46 @@ const Experience = () => {
                                 <div className='absolute left-6 md:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-blue-500 rounded-full'></div>
                                 
                                 {/* Content */}
-                                <div className={`w-full md:w-[45%] bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 ${
+                                <div className={`w-full md:w-[45%] relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group p-6 ${
                                     index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'
                                 }`}>
-                                    <h3 className='text-xl font-bold text-gray-800'>{exp.position}</h3>
-                                    <h4 className='text-lg font-semibold text-blue-600'>{exp.company}</h4>
-                                    <p className='text-sm text-gray-600 mt-1'>
+                                    <h3 className='text-xl font-bold text-gray-800 group-hover:text-[#5651e5] transition-colors'>{exp.position}</h3>
+                                    <h4 className='text-lg font-semibold text-[#5651e5]'>{exp.company}</h4>
+                                    <p className='text-sm text-gray-500 group-hover:text-gray-700 transition-colors mt-1'>
                                         {exp.start_date} - {exp.end_date || 'Present'}
                                     </p>
-                                    <p className='mt-2 text-gray-700'>{exp.description}</p>
+                                    <p className='mt-2 text-gray-700 group-hover:text-gray-900 transition-colors'>{exp.description}</p>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-[#5651e5]/0 to-[#5651e5]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
+        </div>
+    );
+};
+
+const ExperienceCard = ({ position, company, start_date, end_date, description }) => {
+    return (
+        <div className="relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group p-6">
+            <div className="flex flex-col">
+                <div className="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 className="text-xl font-bold text-gray-800 group-hover:text-[#5651e5] transition-colors">
+                            {position}
+                        </h3>
+                        <p className="text-[#5651e5] font-medium">{company}</p>
+                    </div>
+                    <p className="text-sm text-gray-500 group-hover:text-gray-700 transition-colors whitespace-nowrap ml-4">
+                        {start_date} - {end_date}
+                    </p>
+                </div>
+                <p className="text-gray-600 mt-4 group-hover:text-gray-700 transition-colors">
+                    {description}
+                </p>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5651e5]/0 to-[#5651e5]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         </div>
     );
 };

@@ -11,7 +11,7 @@ const BlogCard = ({ title, description, thumbnail, link, pubDate }) => {
             href={link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden"
+            className="block relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group"
         >
             <div className="relative w-full h-48">
                 {!imgError ? (
@@ -20,7 +20,7 @@ const BlogCard = ({ title, description, thumbnail, link, pubDate }) => {
                         alt={title || 'Blog post thumbnail'}
                         width={800}
                         height={400}
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-full transition-transform group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority={false}
                         onError={() => setImgError(true)}
@@ -33,9 +33,9 @@ const BlogCard = ({ title, description, thumbnail, link, pubDate }) => {
                 )}
             </div>
             <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2 line-clamp-2">{title}</h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">{description}</p>
-                <p className="text-sm text-gray-500">
+                <h3 className="text-xl font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-[#5651e5] transition-colors">{title}</h3>
+                <p className="text-gray-600 mb-4 line-clamp-2 group-hover:text-gray-700 transition-colors">{description}</p>
+                <p className="text-sm text-gray-500 group-hover:text-[#5651e5] transition-colors">
                     {new Date(pubDate).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',
@@ -43,6 +43,7 @@ const BlogCard = ({ title, description, thumbnail, link, pubDate }) => {
                     })}
                 </p>
             </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5651e5]/0 to-[#5651e5]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         </a>
     );
 };
@@ -61,26 +62,23 @@ const Blog = () => {
                     </p>
                 </div>
 
-                {BlogPosts.length === 0 ? (
-                    <div className="text-center py-10">
-                        <p className="text-gray-600 mb-6">No articles found.</p>
-                        <a 
-                            href="https://medium.com/@mrntlu" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                        >
-                            <FaMedium size={24} />
-                            <span>View My Medium Profile</span>
-                        </a>
-                    </div>
-                ) : (
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                        {BlogPosts.map((post, index) => (
-                            <BlogCard key={index} {...post} />
-                        ))}
-                    </div>
-                )}
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12'>
+                    {BlogPosts.map((post, index) => (
+                        <BlogCard key={index} {...post} />
+                    ))}
+                </div>
+
+                <div className="text-center">
+                    <a
+                        href="https://burakdev.medium.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
+                    >
+                        <FaMedium size={20} />
+                        <span>Read More on Medium</span>
+                    </a>
+                </div>
             </div>
         </div>
     );

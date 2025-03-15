@@ -47,7 +47,7 @@ const Main = () => {
                     <h2 className='text-2xl md:text-3xl text-gray-700 mb-6'>Computer Engineer</h2>
                     
                     <p className='text-gray-600 max-w-2xl mx-auto mb-10 text-lg leading-relaxed'>
-                        I&apos;m focused on building applications with Flutter & native technologies
+                        I&apos;m focused on building applications with hybrid & native technologies
                         and creating backend services with various technologies.
                     </p>
                     

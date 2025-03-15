@@ -4,28 +4,31 @@ import { FaJava } from "react-icons/fa";
 
 const SkillCard = ({ name, level, color, icon: Icon }) => {
     return (
-        <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group">
-            <div className="flex items-center mb-4">
-                <div className={`p-3 rounded-lg ${color} text-white mr-4`}>
-                    {Icon && <Icon size={24} />}
+        <div className="relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group">
+            <div className="p-6">
+                <div className="flex items-center mb-4">
+                    <div className={`p-3 rounded-lg ${color} text-white mr-4 transition-transform group-hover:scale-110`}>
+                        {Icon && <Icon size={24} />}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-800 group-hover:text-[#5651e5] transition-colors">{name}</h3>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
+                
+                <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                    <div 
+                        className="absolute top-0 left-0 h-full rounded-full transition-all duration-1000 ease-out animate-fill-bar origin-left group-hover:opacity-80"
+                        style={{ 
+                            width: `${level}%`,
+                            background: 'linear-gradient(90deg, #5651e5 0%, #709dff 100%)',
+                        }}
+                    />
+                </div>
+                
+                <div className="flex justify-between text-sm">
+                    <span className="text-gray-500 group-hover:text-gray-700 transition-colors">Proficiency</span>
+                    <span className="text-gray-700 font-medium group-hover:text-[#5651e5] transition-colors">{level}%</span>
+                </div>
             </div>
-            
-            <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
-                <div 
-                    className="absolute top-0 left-0 h-full rounded-full transition-all duration-1000 ease-out animate-fill-bar origin-left"
-                    style={{ 
-                        width: `${level}%`,
-                        background: 'linear-gradient(90deg, #5651e5 0%, #709dff 100%)',
-                    }}
-                />
-            </div>
-            
-            <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Proficiency</span>
-                <span className="text-gray-700 font-medium">{level}%</span>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5651e5]/0 to-[#5651e5]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         </div>
     );
 };
