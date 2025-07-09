@@ -7,10 +7,9 @@ const ProjectCard = ({ name, description, tags, github, playstore, appstore, slu
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div 
-            className={`relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] ${
-                slug === 'watchlistfy' ? 'md:col-span-2' : ''
-            }`}
+        <div
+            className={`relative overflow-hidden rounded-xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:border-[#5651e5]/20 group shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] ${slug === 'watchlistfy' || slug === 'halodish' ? 'md:col-span-2' : ''
+                }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -23,12 +22,12 @@ const ProjectCard = ({ name, description, tags, github, playstore, appstore, slu
                             </h3>
                             <div className="h-1 w-20 bg-[#5651e5]/20 group-hover:w-full transition-all duration-300"></div>
                         </div>
-                        
+
                         <div className="flex gap-3 ml-4">
                             {github && (
-                                <a 
-                                    href={github} 
-                                    target="_blank" 
+                                <a
+                                    href={github}
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={`GitHub repository for ${name}`}
                                     className="text-gray-700 hover:text-[#5651e5] transition-colors transform hover:scale-110"
@@ -37,9 +36,9 @@ const ProjectCard = ({ name, description, tags, github, playstore, appstore, slu
                                 </a>
                             )}
                             {playstore && (
-                                <a 
-                                    href={playstore} 
-                                    target="_blank" 
+                                <a
+                                    href={playstore}
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={`Play Store link for ${name}`}
                                     className="text-gray-700 hover:text-[#5651e5] transition-colors transform hover:scale-110"
@@ -48,9 +47,9 @@ const ProjectCard = ({ name, description, tags, github, playstore, appstore, slu
                                 </a>
                             )}
                             {appstore && (
-                                <a 
-                                    href={appstore} 
-                                    target="_blank" 
+                                <a
+                                    href={appstore}
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={`App Store link for ${name}`}
                                     className="text-gray-700 hover:text-[#5651e5] transition-colors transform hover:scale-110"
@@ -67,8 +66,8 @@ const ProjectCard = ({ name, description, tags, github, playstore, appstore, slu
 
                     <div className="flex flex-wrap gap-2 mt-auto">
                         {tags.map((tag, index) => (
-                            <span 
-                                key={index} 
+                            <span
+                                key={index}
                                 className="inline-block px-3 py-1 text-xs font-medium bg-[#5651e5]/5 text-[#5651e5] rounded-full transition-all duration-300 group-hover:bg-[#5651e5]/10"
                             >
                                 {tag}

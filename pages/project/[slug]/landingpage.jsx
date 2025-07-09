@@ -32,7 +32,7 @@ const useSlugLandingPage = () => {
                         <link rel="icon" href={"/favicon.ico"} />
                     </Head>
 
-                    <Header slug={project.slug}/>
+                    <Header slug={project.slug} />
 
                     <Hero
                         slug={project.slug}

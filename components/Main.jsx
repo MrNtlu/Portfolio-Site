@@ -29,31 +29,31 @@ const Main = () => {
             <div className='absolute top-20 -right-20 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob'></div>
             <div className='absolute top-40 -left-20 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000'></div>
             <div className='absolute bottom-20 left-1/2 w-96 h-96 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000'></div>
-            
+
             {/* Smooth transition to next section */}
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white"></div>
-            
+
             {/* Main content */}
             <div className='max-w-[1240px] mx-auto px-4 flex flex-col items-center justify-center text-center relative z-10'>
                 <div className='mb-16'>
                     <p className='inline-block uppercase text-sm tracking-[0.3em] text-gray-600 mb-4 bg-gray-100 px-4 py-2 rounded-full shadow-sm'>
                         Based in Osaka, Japan
                     </p>
-                    
+
                     <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 mb-6'>
                         Hi, I&apos;m <span className='text-[#5651e5] relative inline-block'>
                             Burak
                             <span className='absolute -inset-1 bg-blue-100 opacity-30 blur-sm rounded-lg'></span>
                         </span>
                     </h1>
-                    
+
                     <h2 className='text-2xl md:text-3xl text-gray-700 mb-6'>Computer Engineer</h2>
-                    
+
                     <p className='text-gray-600 max-w-2xl mx-auto mb-10 text-lg leading-relaxed'>
                         I&apos;m focused on building applications with hybrid & native technologies
                         and creating backend services with various technologies.
                     </p>
-                    
+
                     <div className='flex items-center justify-center gap-5 mb-16'>
                         <a
                             href='https://www.linkedin.com/in/burak-fidan/'
@@ -79,7 +79,7 @@ const Main = () => {
                             </div>
                         </a>
 
-                        <Link href='/#contact'>
+                        <Link href='mailto:mrntlu@gmail.com'>
                             <div className='rounded-xl shadow-lg shadow-gray-400/50 p-5 cursor-pointer hover:scale-110 hover:shadow-green-400/30 ease-in duration-300 bg-white/90 backdrop-blur-sm'>
                                 <AiFillMail size={22} className="text-[#5651e5]" />
                             </div>
@@ -99,9 +99,9 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            
+
             {/* Scroll indicator */}
-            <div 
+            <div
                 onClick={() => {
                     document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
                 }}
@@ -117,13 +117,13 @@ const Main = () => {
             >
                 <div className="flex flex-col items-center group">
                     <p className="text-sm font-medium tracking-wider mb-2 text-[#5651e5] animate-pulse transition-all duration-300 drop-shadow-[0_0_8px_rgba(86,81,229,0.5)] group-hover:drop-shadow-[0_0_12px_rgba(86,81,229,0.8)]">Scroll Down</p>
-                    <svg 
+                    <svg
                         className="w-6 h-6 text-[#5651e5] drop-shadow-[0_0_8px_rgba(86,81,229,0.5)] group-hover:drop-shadow-[0_0_12px_rgba(86,81,229,0.8)]"
-                        fill="none" 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        strokeWidth="2" 
-                        viewBox="0 0 24 24" 
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
                         stroke="currentColor"
                     >
                         <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -134,7 +134,7 @@ const Main = () => {
             {/* Scroll to top button */}
             <button
                 onClick={scrollToTop}
-                className={`fixed bottom-8 right-8 p-4 rounded-full bg-[#5651e5] text-white shadow-lg 
+                className={`fixed bottom-8 right-8 p-4 rounded-full bg-[#5651e5] text-white shadow-lg
                     hover:bg-[#4540b3] transition-all duration-300 z-50
                     ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}
                 `}

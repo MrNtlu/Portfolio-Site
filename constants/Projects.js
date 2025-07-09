@@ -3,12 +3,12 @@ export const PortfolioProjects = [
         slug: "watchlistfy",
         name: "Watchlistfy - AI & Tracker",
         description: `All-in-one content tracking application with AI integration. Users can track Movies, TV Shows, Anime, and Games.
-        
+
         Features include AI suggestions based on user preferences, AI assistant for content summaries and review analysis, unlimited list management, and detailed progress tracking.`,
         tags: ["Flutter", "Go", "MongoDB", "Redis", "OpenAI", "TMDB API", "IGDB API", "Jikan API"],
         github: null,
-        playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.watchlistfy",
-        appstore: "https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6474720355",
+        playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer",
+        appstore: "https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748",
     },
     {
         slug: "kanma",
@@ -16,17 +16,27 @@ export const PortfolioProjects = [
         description: `Open source personal finance manager that helps users track investments, transactions, subscriptions and detailed analytics.`,
         tags: ["Go", "MongoDB", "Flutter", "Redis", "Ope    n Api", "Scraper", "React", "TailwindCSS"],
         github: "https://github.com/MrNtlu/Asset-Manager",
-        playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.kantan",
-        appstore: "https://apps.apple.com/tr/app/kanma-personal-finance/id1629419797",
+        playstore: null,
+        appstore: "https://apps.apple.com/us/app/kanma-personal-finance/id1629419797",
     },
     {
         slug: "passvault",
         name: "PassVault - Online & Offline Manager",
         description: `App uses Jetpack Compose, Room Caching, Kotlin, Retrofit, MVVM, Hilt and Parse SDK.`,
-        tags: ["Android", "Kotlin", "Jetpack Compose", "Room Caching", "Parse", "RealmDB", "MVVM", "Hilt" ],
+        tags: ["Android", "Kotlin", "Jetpack Compose", "Room Caching", "Parse", "RealmDB", "MVVM", "Hilt"],
         github: "https://github.com/MrNtlu/PassVault",
         playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.PassVault",
         appstore: null,
+    },
+    {
+        slug: "halodish",
+        name: "HaloDish",
+        description: `HaloDish is a friendly service for Muslims & Vegans
+HaloDish app provides information about halal and vegan restaurants, halal food stores and prayer spaces in Japan and Thailand.`,
+        tags: ["Flutter", "Django", "AWS", "PostgreSQL", "Docker"],
+        github: null,
+        playstore: "https://play.google.com/store/apps/details?id=com.eftax.halodish",
+        appstore: "https://apps.apple.com/id/app/halodish-halal-vegan/id6575360757",
     },
     {
         slug: "mai_2",
@@ -34,7 +44,7 @@ export const PortfolioProjects = [
         description: `App uses Jikan API, SQLite, Room, MVVM with LiveData, Coroutines, Navigation Components and Retrofit.`,
         tags: ["Android", "Kotlin", "SQLite", "Room", "MVVM", "LiveData", "Coroutines", "Retrofit"],
         github: "https://github.com/MrNtlu/MyAnimeInfo2",
-        playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.myanimeinfo2",
+        playstore: null,
         appstore: null,
     },
     {
@@ -43,8 +53,8 @@ export const PortfolioProjects = [
         description: `Worked on Android & iOS Application with Firebase, Google Translate API, Google Maps API and some other libraries and API's.`,
         tags: ["Android", "iOS", "Firebase", "FCM", "Cloud Functions", "RxJava", "Kotlin", "Java", "Retrofit"],
         github: null,
-        playstore: "https://play.google.com/store/apps/details?id=com.mrntlu.solnetwork",
-        appstore: "https://apps.apple.com/us/app/sugee-kansai/id1512411346",
+        playstore: null,
+        appstore: null,
     },
     // {
     //     slug: "subs",
