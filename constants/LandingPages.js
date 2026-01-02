@@ -210,6 +210,47 @@ export const LandingPages = [
             <></>
         )
     },
+    {
+        slug: "linksaver",
+        name: "Link Saver - Offline URL Organizer",
+        title: "Link Saver",
+        sTitle: "Offline URL Organizer",
+        subTitle: "Save links offline with rich previews, folders/tags, and Share Extension support.",
+        description: "An iOS app for saving URLs offline with metadata previews, folder/tag organization, and quick importing from Share Sheet.",
+        playstore: null,
+        appstore: null,
+        logoSrc: "/static/assets/projects/linksaver/linksaver_icon.png",
+        screenshots: [
+            "/static/assets/projects/linksaver/screenshot-1.png",
+            "/static/assets/projects/linksaver/screenshot-2.png",
+            "/static/assets/projects/linksaver/screenshot-3.png",
+        ],
+        features: [
+            {
+                icon: "offline",
+                title: "Offline Storage",
+                description: "Your saved links stay available even when you’re offline."
+            },
+            {
+                icon: "online",
+                title: "Metadata Previews",
+                description: "Automatic title/description and preview images for saved URLs."
+            },
+            {
+                icon: "statistics",
+                title: "Folders & Tags",
+                description: "Organize links into folders and filter quickly with tags."
+            },
+            {
+                icon: "easy",
+                title: "Share Extension",
+                description: "Save links from anywhere using the iOS Share Sheet."
+            },
+        ],
+        privacy: (
+            <></>
+        )
+    },
 ]
 
 export const FindSlug = (slug) => {

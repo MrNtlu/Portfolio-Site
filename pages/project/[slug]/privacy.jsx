@@ -29,7 +29,7 @@ const usePrivacyPage = () => {
                         <link rel="icon" href={"/favicon.ico"} />
                     </Head>
 
-                    <Header slug={project.slug}/>
+                    <Header slug={project.slug} logoSrc={project.logoSrc} />
 
                     <div className="flex flex-col items-center justify-start px-[5rem] p-[5rem] relative z-[2] pt-[7rem] bg-[#FFFFFF]">
                         {project.privacy}

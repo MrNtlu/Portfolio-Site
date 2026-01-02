@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useRouter } from 'next/router'
 import Header from '../../../components/landingpage/Header'
 import Description from '../../../components/landingpage/Description'
 import ErrorPage from 'next/error'
 import { FindSlug } from '../../../constants/LandingPages'
 import Hero from '../../../components/landingpage/Hero'
+import LinksaverLanding from '../../../components/landingpage/LinksaverLanding'
 
 const useSlugLandingPage = () => {
     const router = useRouter()
@@ -15,6 +16,11 @@ const useSlugLandingPage = () => {
     let project = FindSlug(slug)
 
     if (router.isReady) {
+        // Use custom landing page for linksaver
+        if (slug === 'linksaver') {
+            return <LinksaverLanding />
+        }
+
         if (project != undefined) {
             return (
                 <div className='text-white overflow-hidden w-[100%]'>
@@ -32,7 +38,7 @@ const useSlugLandingPage = () => {
                         <link rel="icon" href={"/favicon.ico"} />
                     </Head>
 
-                    <Header slug={project.slug} />
+                    <Header slug={project.slug} logoSrc={project.logoSrc} />
 
                     <Hero
                         slug={project.slug}
@@ -41,6 +47,7 @@ const useSlugLandingPage = () => {
                         subTitle={project.subTitle}
                         google={project.playstore}
                         ios={project.appstore}
+                        screenshots={project.screenshots}
                     />
 
                     <Description description={project.description} features={project.features} />
@@ -50,7 +57,7 @@ const useSlugLandingPage = () => {
             return <ErrorPage statusCode={404} />
         }
     } else {
-        return <div></div> //TODO: Implement loading
+        return <div></div>
     }
 }
 

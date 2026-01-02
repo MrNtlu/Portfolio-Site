@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import Image from 'next/image'
 
 const GithubActivity = () => {
     return (
@@ -21,10 +22,13 @@ const GithubActivity = () => {
                 </div>
 
                 <div className="rounded-xl bg-white border border-gray-200 p-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
-                    <img
+                    <Image
                         src="https://ghchart.rshah.org/30a14e/mrntlu"
-                        alt="MrNtlu's Github chart"
+                        alt="MrNtlu's GitHub chart"
+                        width={1200}
+                        height={240}
                         className="w-full h-auto rounded-lg"
+                        sizes="(max-width: 1240px) 100vw, 1240px"
                     />
                     
                     <div className="mt-8 text-center">
