@@ -7,7 +7,6 @@ A [Next.js](https://nextjs.org/) portfolio site with app landing pages.
 | Path | Description | Example |
 |------|-------------|---------|
 | `/` | Main portfolio homepage | [localhost:3000](http://localhost:3000) |
-| `/resume` | Resume/CV page | [localhost:3000/resume](http://localhost:3000/resume) |
 | `/project/[slug]/landingpage` | App landing pages | [localhost:3000/project/linksaver/landingpage](http://localhost:3000/project/linksaver/landingpage) |
 | `/project/[slug]/privacy` | Privacy policy (legacy) | [localhost:3000/project/kanma/privacy](http://localhost:3000/project/kanma/privacy) |
 | `/project/[appname]/privacy.html` | Privacy policy (static) | [localhost:3000/project/linksaver/privacy.html](http://localhost:3000/project/linksaver/privacy.html) |
