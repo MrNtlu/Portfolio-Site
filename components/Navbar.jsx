@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import React, { useEffect, useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import NavImg from '../public/static/assets/navLogo.jpg';
 
 const Navbar = () => {
@@ -55,10 +55,6 @@ const Navbar = () => {
                             <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>Projects</li>
                         </Link>
 
-                        <Link href='/resume'>
-                            <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>Resume</li>
-                        </Link>
-
                         <Link href='/#contact'>
                             <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>Contact</li>
                         </Link>
@@ -103,10 +99,6 @@ const Navbar = () => {
 
                             <Link href='/#projects'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Projects</li>
-                            </Link>
-
-                            <Link href='/resume'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>Resume</li>
                             </Link>
 
                             <Link href='/#contact'>

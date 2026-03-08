@@ -53,7 +53,6 @@ Portfolio-Site/
 │   └── LandingPages.js       # Legacy landing page config
 ├── pages/
 │   ├── index.js              # Homepage
-│   ├── resume.jsx            # Resume page
 │   └── project/
 │       └── [slug]/
 │           ├── landingpage.jsx   # Dynamic landing page route
